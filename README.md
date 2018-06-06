@@ -113,8 +113,7 @@ MIT license。
 
 ### kubeadm安装文档
 
-* https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
-
+- https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
 - [使用 kubeadm 创建 kubernetes 1.9 集群](https://www.kubernetes.org.cn/3357.html)
 - [使用kubeadm在CentOS 7上安装Kubernetes 1.8](https://www.zybuluo.com/ncepuwanghui/note/953929)
 - [使用kubeadm安装Kubernetes 1.8版本](https://www.kubernetes.org.cn/2906.html)
