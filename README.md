@@ -105,7 +105,7 @@ MIT license。
 
 将上面`kubeadm init` 的输出中的`kube join` 的内容放到kubeadm_join_node.sh的最后。
 
-运行`./kubeadm_join_node.sh` 将部署kubernetes node，并将该节点加入kubernetes集群。
+运行`./kubeadm_join_node.sh` 部署kubernetes node，并将该节点加入kubernetes集群。
 
 
 
