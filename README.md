@@ -23,6 +23,7 @@ k8s-deploy使用kubeadm一键部署kubernetes集群，让你完美避过各种�
 
 * kubernetes v1.10.3
 * docker-ce 17.03.2
+* Flannel network
 * CentOS7 64 bits
 
 
