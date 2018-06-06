@@ -6,14 +6,14 @@
 
 
 
-使用kubeadm一键部署kubernetes集群，让你完美避过各种坑。
+k8s-deploy使用kubeadm一键部署kubernetes集群，让你完美避过各种坑。
 
 
 
 特点：
 
 * 一键部署，避免踩坑
-* 不需要翻墙，设置代理
+* 不需要翻墙，不需要设置代理
 * 使用国内的Yum源、Docker镜像和Kubernetes镜像，安装速度快
 * 不设前提，能上外网的CentOS7就行
 
@@ -95,7 +95,7 @@ MIT license。
 
 
 
-##部署kubernetes node
+## 部署kubernetes node
 
 
 
