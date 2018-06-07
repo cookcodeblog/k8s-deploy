@@ -7,3 +7,6 @@ kubectl apply -f kube-flannel.yml
 sleep 10
 kubectl get pods --all-namespaces
 
+# Check component status
+kubectl get cs
+
