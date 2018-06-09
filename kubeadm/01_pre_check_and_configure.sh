@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -e
+
 echo "###############################################"
 echo "Please ensure your OS is CentOS7 64 bits"
 echo "Please ensure your machine has full network connection and internet access"

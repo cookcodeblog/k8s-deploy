@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -e
+
 cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
 name=Kubernetes

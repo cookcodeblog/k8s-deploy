@@ -1,3 +1,6 @@
+#!/bin/bash
+
+set -e
 
 # Reset firstly if ran kubeadm init before
 kubeadm reset

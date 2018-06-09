@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Uninstall installed docker
 sudo yum remove docker \
                   docker-client \

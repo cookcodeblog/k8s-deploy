@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -e
+
 ## Pre-configure
 ./01_pre_check_and_configure.sh
 

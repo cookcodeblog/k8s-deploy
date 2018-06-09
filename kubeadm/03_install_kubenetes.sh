@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -e
+
 ./use_aliyun_kubernetes_yum_source.sh
 
 setenforce 0
