@@ -8,7 +8,7 @@ set -e
 KUBE_VERSION=v1.10.3
 KUBE_PAUSE_VERSION=3.0
 ETCD_VERSION=3.1.12
-DNS_VERSION=1.14.10
+DNS_VERSION=1.14.8
 
 GCR_URL=k8s.gcr.io
 ALIYUN_URL=registry.cn-shenzhen.aliyuncs.com/cookcodeblog
