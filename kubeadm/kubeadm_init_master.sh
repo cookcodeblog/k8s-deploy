@@ -9,7 +9,7 @@ set -e
 ./02_install_docker.sh
 
 # Install kubelet kubeadm kubectl
-./03_install_kubenetes.sh
+./03_install_kubernetes.sh
 
 # Pull kubernetes images
 ./04_pull_kubernetes_images_from_aliyun.sh
