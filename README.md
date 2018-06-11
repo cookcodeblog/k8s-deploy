@@ -1,5 +1,3 @@
-[TOC]
-
 
 
 # 使用kubeadm一键部署kubernetes集群
@@ -78,7 +76,7 @@ MIT license。
 ./02_install_docker.sh
 
 # Install kubelet kubeadm kubectl
-./03_install_kubenetes.sh
+./03_install_kubernetes.sh
 
 # Pull kubernetes images
 ./04_pull_kubernetes_images_from_aliyun.sh
@@ -110,36 +108,10 @@ MIT license。
 
 
 
-## 参考文档
-
-### kubeadm安装文档
-
-- https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
-- [使用 kubeadm 创建 kubernetes 1.9 集群](https://www.kubernetes.org.cn/3357.html)
-- [使用kubeadm在CentOS 7上安装Kubernetes 1.8](https://www.zybuluo.com/ncepuwanghui/note/953929)
-- [使用kubeadm安装Kubernetes 1.8版本](https://www.kubernetes.org.cn/2906.html)
-- [使用kubeadm安装kubernetes1.7/1.8/1.9](https://blog.csdn.net/zhuchuangang/article/details/76572157/)
-- [使用kubeadm创建一个K8s的Cluster](https://zhuanlan.zhihu.com/p/31398416)
+## 详细文档
 
 
 
-### 使用国内的Yum源、Docker镜像和Kubernetes镜像
+详细文档请参考我的博客文章：
 
-* [Kubernetes国内镜像、下载安装包和拉取gcr.io镜像](https://blog.csdn.net/nklinsirui/article/details/80581286)
-* [Docker国内Yum源和国内镜像仓库](Docker国内Yum源和国内镜像仓库)
-* [使用国内Yum源](使用国内Yum源)
-* [在VMWare中设置ISO光盘镜像为本地Yum源](https://blog.csdn.net/nklinsirui/article/details/80145975)
-
-
-
-### VMware 使用文档
-
-* [ VMware workstation和VMware fusion安装CentOS7后联网问题](https://blog.csdn.net/nklinsirui/article/details/80378920)
-
-  
-
-### CentOS7使用文档
-
-* [CentOS7 修改Hostname](https://blog.csdn.net/nklinsirui/article/details/80579342)
-
-  
+* [使用kubeadm一键部署kubernetes集群](https://mp.csdn.net/mdeditor/80602724)
