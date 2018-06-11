@@ -96,4 +96,6 @@ k8s-deploy使用kubeadm一键部署kubernetes集群，让你完美避过各种�
 
 详细文档请参考我的博客文章：
 
-* [使用kubeadm一键部署kubernetes集群](https://mp.csdn.net/mdeditor/80602724)
+* [使用kubeadm一键部署kubernetes集群](https://blog.csdn.net/nklinsirui/article/details/80602724)
+
+  
