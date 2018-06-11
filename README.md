@@ -34,24 +34,6 @@ k8s-deploy使用kubeadm一键部署kubernetes集群，让你完美避过各种�
 
 
 
-## k8s-deploy
-
-
-
-打开 [k8s-deploy](https://github.com/cookcodeblog/k8s-deploy) 查看源代码，或者直接运行下面命令clone。
-
-
-
-```bash
-git clone https://github.com/cookcodeblog/k8s-deploy.git
-```
-
-
-
-MIT license。
-
-
-
 ## 部署kubernetes master
 
 克隆（或复制）kubeadm目录到master机器上，以root用户运行`chmod u+x *.sh` 。
