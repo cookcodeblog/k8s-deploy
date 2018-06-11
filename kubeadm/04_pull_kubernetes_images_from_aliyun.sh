@@ -6,7 +6,7 @@ set -e
 # Search "Running kubeadm without an internet connection"
 # For running kubeadm without an internet connection you have to pre-pull the required master images for the version of choice:
 KUBE_VERSION=v1.10.3
-KUBE_PAUSE_VERSION=3.0
+KUBE_PAUSE_VERSION=3.1
 ETCD_VERSION=3.1.12
 DNS_VERSION=1.14.8
 

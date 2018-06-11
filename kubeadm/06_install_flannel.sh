@@ -12,3 +12,6 @@ kubectl get pods --all-namespaces
 # Check component status
 kubectl get cs
 
+# Check pods status incase any pods are not in running status
+kubectl get pods --all-namespaces
+
