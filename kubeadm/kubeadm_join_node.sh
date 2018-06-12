@@ -11,8 +11,8 @@ set -e
 # Install kubelet kubeadm kubectl
 ./03_install_kubernetes.sh
 
-# Pull kubernetes images
-./04_pull_kubernetes_images_from_aliyun.sh
+# Pull kubernetes node images
+./04_pull_kubernetes_node_images_from_aliyun.sh
 
 
 # Join kubernetes node
