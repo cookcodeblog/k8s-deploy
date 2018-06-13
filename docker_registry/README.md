@@ -22,11 +22,11 @@
 限制：
 
 * 目前只支持HTTP方式，还不支持HTTPS方式。
-* 选择以下两种方式之一，不要混合使用，否则需要手工停止并删除`registry 镜像`。
+* 选择以下两种方式之一，不要混合使用，否则需要手工停止并删除`registry` 镜像。
 
 
 
-> 先在`docker_registry` 目录下运行`chmod -R u+x *.sh` 设置脚本运行权限，再运行下面的脚本搭建。
+> 先运行`chmod -R u+x docker_registry` 设置脚本运行权限，再运行下面的脚本搭建。
 >
 > 搭建完后可以运行`./test_docker_registry.sh` 检查是否搭建成功。
 
