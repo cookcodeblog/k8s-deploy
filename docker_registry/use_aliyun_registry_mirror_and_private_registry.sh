@@ -3,10 +3,6 @@
 
 set -e
 
-# Pull registry:2 image and run it
-docker-compose down
-docker-compose up -d
-
 # Use Aliyun docker registry mirror and set insecure-registries
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'

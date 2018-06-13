@@ -26,7 +26,7 @@
 
 
 
-> 先运行`chmod -R u+x docker_registry` 设置脚本运行权限，再运行下面的脚本搭建。
+> 先在docker_registy目录运行`chmod u+x *.sh` 设置脚本运行权限，再运行下面的脚本搭建。
 >
 > 搭建完后可以运行`./test_docker_registry.sh` 检查是否搭建成功。
 
@@ -36,7 +36,7 @@
 
 
 
-在`run` 目录运行`./create_docker_registry.sh` 。
+运行`./create_docker_registry.sh` 。
 
 
 
@@ -44,7 +44,7 @@
 
 
 
-在`docker-compose` 目录运行`./create_docker_registry_compose.sh` 。
+运行`./create_docker_registry_compose.sh` 。
 
 
 
