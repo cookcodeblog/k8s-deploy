@@ -2,6 +2,8 @@ registry:
   restart: always
   image: registry:2
   container_name: registry
+  environment:
+    REGISTRY_STORAGE_DELETE_ENABLED: "true"
   ports:
     - 5000:5000
   volumes:
