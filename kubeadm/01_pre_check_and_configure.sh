@@ -35,10 +35,11 @@ echo "###############################################"
 echo "Turn off Swap"
 swapoff -a
 cp -p /etc/fstab /etc/fstab.bak$(date '+%Y%m%d%H%M%S')
-sed -i "s/\/dev\/mapper\/rhel-swap/\#\/dev\/mapper\/rhel-swap/g" /etc/selinux/config
-sed -i "s/\/dev\/mapper\/centos-swap/\#\/dev\/mapper\/centos-swap/g" /etc/selinux/config
+sed -i "s/\/dev\/mapper\/rhel-swap/\#\/dev\/mapper\/rhel-swap/g" /etc/fstab
+sed -i "s/\/dev\/mapper\/centos-swap/\#\/dev\/mapper\/centos-swap/g" /etc/fstab
 mount -a
 free -m
+cat /proc/swaps
 
 # Setup iptables (routing)
 echo "###############################################"
