@@ -6,8 +6,6 @@ set -e
 kubeadm reset
 
 # kubeadm init with flannel network
-export KUBE_REPO_PREFIX="registry.cn-shenzhen.aliyuncs.com/cookcodeblog"
-export KUBE_ETCD_IMAGE="registry.cn-shenzhen.aliyuncs.com/cookcodeblog/etcd-amd64:3.1.12"
 kubeadm init --kubernetes-version=v1.10.3 --pod-network-cidr=10.244.0.0/16
 
 

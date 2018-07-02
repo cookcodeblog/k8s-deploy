@@ -11,8 +11,11 @@ KUBE_PAUSE_VERSION=3.1
 GCR_URL=k8s.gcr.io
 ALIYUN_URL=registry.cn-shenzhen.aliyuncs.com/cookcodeblog
 
+# When test v1.11.0, I found Kubernetes depends on both pause-amd64:3.1 and pause:3.1 
+
 images=(kube-proxy-amd64:${KUBE_VERSION}
-pause-amd64:${KUBE_PAUSE_VERSION})
+pause-amd64:${KUBE_PAUSE_VERSION}
+pause:${KUBE_PAUSE_VERSION})
 
 
 for imageName in ${images[@]} ; do

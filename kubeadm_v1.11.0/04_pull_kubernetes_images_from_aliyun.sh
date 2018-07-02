@@ -8,21 +8,20 @@ set -e
 KUBE_VERSION=v1.11.0
 KUBE_PAUSE_VERSION=3.1
 ETCD_VERSION=3.2.18
-DNS_VERSION=1.14.8
 CORE_DNS_VERSION=1.1.3
 
 GCR_URL=k8s.gcr.io
 ALIYUN_URL=registry.cn-shenzhen.aliyuncs.com/cookcodeblog
+
+# When test v1.11.0, I found Kubernetes depends on both pause-amd64:3.1 and pause:3.1 
 
 images=(kube-proxy-amd64:${KUBE_VERSION}
 kube-scheduler-amd64:${KUBE_VERSION}
 kube-controller-manager-amd64:${KUBE_VERSION}
 kube-apiserver-amd64:${KUBE_VERSION}
 pause-amd64:${KUBE_PAUSE_VERSION}
+pause:${KUBE_PAUSE_VERSION}
 etcd-amd64:${ETCD_VERSION}
-k8s-dns-sidecar-amd64:${DNS_VERSION}
-k8s-dns-kube-dns-amd64:${DNS_VERSION}
-k8s-dns-dnsmasq-nanny-amd64:${DNS_VERSION}
 coredns:${CORE_DNS_VERSION})
 
 
@@ -33,4 +32,6 @@ for imageName in ${images[@]} ; do
 done
 
 docker images
+
+
 

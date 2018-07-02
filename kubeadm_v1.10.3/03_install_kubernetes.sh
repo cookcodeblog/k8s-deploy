@@ -14,12 +14,5 @@ systemctl daemon-reload
 systemctl restart kubelet
 
 
-# Set pause-amd64 image for kubelet service
-cat > /etc/systemd/system/kubelet.service.d/20-pod-infra-image.conf <<EOF
-[Service]
-Environment="KUBELET_EXTRA_ARGS=--pod-infra-container-image=registry.cn-shenzhen.aliyuncs.com/cookcodeblog/pause-amd64:3.1"
-EOF
-
-systemctl daemon-reload
-systemctl restart kubelet
+# Use Kubernetes default pause image
 

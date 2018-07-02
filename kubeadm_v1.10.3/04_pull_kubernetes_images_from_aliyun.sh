@@ -13,10 +13,13 @@ DNS_VERSION=1.14.8
 GCR_URL=k8s.gcr.io
 ALIYUN_URL=registry.cn-shenzhen.aliyuncs.com/cookcodeblog
 
+# When test v1.10.3, I found Kubernetes depends on both pause-amd64:3.1 and pause:3.1
+
 images=(kube-proxy-amd64:${KUBE_VERSION}
 kube-scheduler-amd64:${KUBE_VERSION}
 kube-controller-manager-amd64:${KUBE_VERSION}
 kube-apiserver-amd64:${KUBE_VERSION}
+pause:${KUBE_PAUSE_VERSION}
 pause-amd64:${KUBE_PAUSE_VERSION}
 etcd-amd64:${ETCD_VERSION}
 k8s-dns-sidecar-amd64:${DNS_VERSION}

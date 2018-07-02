@@ -16,8 +16,6 @@ set -e
 
 
 # Join kubernetes node
-export KUBE_REPO_PREFIX="registry.cn-shenzhen.aliyuncs.com/cookcodeblog"
-export KUBE_ETCD_IMAGE="registry.cn-shenzhen.aliyuncs.com/cookcodeblog/etcd-amd64:3.1.12"
 
 
 # Put "kubeadm join" here from "kubeadm init" output
