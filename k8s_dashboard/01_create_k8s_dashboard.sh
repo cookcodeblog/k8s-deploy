@@ -2,10 +2,11 @@
 
 set -e
 
+# Use Aligyun k8s dashboard images
+./use_aliyun_k8s_dashboard_images.sh
 
 # Deploy k8s master
-kubectl delete -f kubernetes-dashboard.yaml --ignore-not-found=true
-kubectl create -f kubernetes-dashboard.yaml
+kubectl apply -f kubernetes-dashboard.yaml
 
 # Check pod status
 kubectl get pods --namespace=kube-system  | grep kubernetes-dashboard

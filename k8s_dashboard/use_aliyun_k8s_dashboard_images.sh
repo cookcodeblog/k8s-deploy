@@ -7,3 +7,5 @@ cp -p kubernetes-dashboard.yaml kubernetes-dashboard.yaml.bak$(date '+%Y%m%d%H%M
 
 # Replace k8s.gcr.io image with registry.cn-shenzhen.aliyuncs.com/cookcodeblog
 sed -i "s/k8s\.gcr\.io/registry\.cn-shenzhen\.aliyuncs\.com\/cookcodeblog/g" kubernetes-dashboard.yaml
+
+
