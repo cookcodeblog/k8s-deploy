@@ -12,12 +12,7 @@ yum install -y kubectl-1.13.0
 systemctl enable kubelet && systemctl start kubelet
 
 # Configure cgroup matched with Docker
+# TODO still need configure cgroup ?
 ./configure_cgroup.sh
 systemctl daemon-reload
 systemctl restart kubelet
-
-
-# Don't set pause-amd64 image for kubelet service
-# Use Kubernetes default pause image
-
-
