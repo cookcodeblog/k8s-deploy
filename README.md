@@ -19,6 +19,12 @@
 参见 [kubeadm_v1.11.0](https://github.com/cookcodeblog/k8s-deploy/tree/master/kubeadm_v1.11.0)
 
 
+## 部署Kubernetes v1.13.0
+
+
+
+参见 [kubeadm_v1.13.0](https://github.com/cookcodeblog/k8s-deploy/tree/master/kubeadm_v1.13.0)
+
 
 
 

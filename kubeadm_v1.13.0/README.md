@@ -1,5 +1,7 @@
 # Install Kubernetes v1.13.0
 
+Requires 2 CPUs
+
 * Use Aliyun Yum repo
 * Use Aliyun Docker repo
 * Use Aliyun Kubernetes repo
