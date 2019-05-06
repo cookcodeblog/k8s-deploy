@@ -9,7 +9,7 @@ Requires 2 CPUs
 * kubeadm 1.13
 * kubelet 1.13
 * kubectl 1.13
-* flannel v0.11.0
+* flannel v0.10.0
 
 ## Kubernetes Images
 
