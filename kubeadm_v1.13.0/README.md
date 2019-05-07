@@ -1,5 +1,7 @@
 # Install Kubernetes v1.13.0
 
+https://v1-13.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
+
 Requires 2 CPUs
 
 * Use Aliyun Yum repo

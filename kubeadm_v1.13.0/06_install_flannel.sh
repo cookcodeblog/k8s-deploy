@@ -2,13 +2,9 @@
 
 set -e
 
-# For kubernetes v1.13.0 still use flannel 0.10.0
-# Pull flannel images from Aliyun
-docker pull registry.cn-shenzhen.aliyuncs.com/cookcodeblog/flannel:v0.10.0-amd64
-docker tag registry.cn-shenzhen.aliyuncs.com/cookcodeblog/flannel:v0.10.0-amd64 quay.io/coreos/flannel:v0.10.0-amd64
-docker rmi registry.cn-shenzhen.aliyuncs.com/cookcodeblog/flannel:v0.10.0-amd64
+./pull_flannel_images_from_aliyun.sh
 
-wget https://raw.githubusercontent.com/coreos/flannel/v0.10.0/Documentation/kube-flannel.yml
+wget https://raw.githubusercontent.com/coreos/flannel/a70459be0084506e4ec919aa1c114638878db11b/Documentation/kube-flannel.yml
 
 kubectl apply -f kube-flannel.yml
 
