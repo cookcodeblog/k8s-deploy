@@ -18,3 +18,5 @@ kubectl get cs
 # Check pods status incase any pods are not in running status
 kubectl get pods --all-namespaces | grep -v Running
 
+# Nodes
+kubectl get nodes

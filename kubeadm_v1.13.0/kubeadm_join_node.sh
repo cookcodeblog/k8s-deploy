@@ -15,6 +15,7 @@ set -e
 ./04_pull_kubernetes_node_images_from_aliyun.sh
 
 
+
 # Join kubernetes node
 
 # Put "kubeadm join" here from "kubeadm init" output
@@ -22,4 +23,10 @@ set -e
 
 # Run `kubeadm token create --print-join-command` in Kubernetes master to get `kubeadm join` command
 
+
+# To resolve need specify API server and x509 error
+# https://github.com/kubernetes/kubernetes/issues/48378
+export KUBECONFIG=/etc/kubernetes/kubelet.conf
+
+./k8s_health_check.sh
 
