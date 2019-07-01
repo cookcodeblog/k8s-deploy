@@ -11,11 +11,4 @@ kubectl apply -f kube-flannel.yml
 
 # Wait a while to let network takes effect
 sleep 30
-kubectl get pods --all-namespaces
-
-# Check component status
-kubectl get cs
-
-# Check pods status incase any pods are not in running status
-kubectl get pods --all-namespaces | grep -v Running
-
+./k8s_health_check.sh
