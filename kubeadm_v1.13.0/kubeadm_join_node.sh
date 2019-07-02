@@ -14,6 +14,9 @@ set -e
 # Pull kubernetes node images
 ./04_pull_kubernetes_node_images_from_aliyun.sh
 
+# Pull flannel images
+./pull_flannel_images_from_aliyun.sh
+
 
 
 # Join kubernetes node
@@ -26,7 +29,13 @@ set -e
 
 # To resolve need specify API server and x509 error
 # https://github.com/kubernetes/kubernetes/issues/48378
-export KUBECONFIG=/etc/kubernetes/kubelet.conf
+mkdir -p $HOME/.kube
+sudo cp /etc/kubernetes/kubelet.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+cp -p $HOME/.bash_profile $HOME/.bash_profile.bak$(date '+%Y%m%d%H%M%S')
+echo "export KUBECONFIG=$HOME/.kube/config" >> $HOME/.bash_profile
+source $HOME/.bash_profile
+
 
 ./k8s_health_check.sh
 
