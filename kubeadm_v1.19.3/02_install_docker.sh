@@ -3,7 +3,7 @@
 set -e
 
 # Uninstall installed docker
-sudo yum remove docker \
+sudo yum remove -y docker \
                   docker-client \
                   docker-client-latest \
                   docker-common \

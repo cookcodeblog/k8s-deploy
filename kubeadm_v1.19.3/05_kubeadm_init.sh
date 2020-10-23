@@ -6,8 +6,8 @@ set -e
 kubeadm reset -f
 
 # kubeadm init with calico network
-CONTROL_PLANE_ENDPOINT=172.31.240.128
-API_SERVER_IP=172.31.240.128
+CONTROL_PLANE_ENDPOINT="$1"
+API_SERVER_IP="$2"
 IMAGE_REPOSITORY=registry.cn-shenzhen.aliyuncs.com/cookcodeblog
 
 kubeadm init \
