@@ -15,7 +15,8 @@ kubeadm init \
   --control-plane-endpoint=${CONTROL_PLANE_ENDPOINT} \
   --apiserver-advertise-address=${API_SERVER_IP} \
   --pod-network-cidr=192.168.0.0/16 \
-  --image-repository=${IMAGE_REPOSITORY}
+  --image-repository=${IMAGE_REPOSITORY} \
+  --upload-certs
 
 
 # Make kubectl works
