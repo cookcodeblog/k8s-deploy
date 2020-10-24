@@ -43,5 +43,7 @@
 详细文档请参考我的博客文章：
 
 * [使用kubeadm一键部署kubernetes集群](https://blog.csdn.net/nklinsirui/article/details/80602724)
+* [在CentOS7上用kubeadm安装多Master节点的高可用Kubernetes集群](https://cookcode.blog.csdn.net/article/details/109265060)
+
 
   

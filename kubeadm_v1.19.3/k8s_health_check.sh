@@ -9,14 +9,11 @@ set -e
 # Display cluster info
 kubectl cluster-info
 
+# Nodes
+kubectl get nodes
+
 # Display pds
 kubectl get pods --all-namespaces -o wide
 
-# Check component status
-kubectl get cs
-
 # Check pods status incase any pods are not in running status
 kubectl get pods --all-namespaces | grep -v Running
-
-# Nodes
-kubectl get nodes
