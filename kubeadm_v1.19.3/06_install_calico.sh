@@ -2,8 +2,9 @@
 
 set -e
 
-wget -O calico.yaml https://docs.projectcalico.org/v3.16/manifests/calico.yaml
-kubectl apply -f calico.yaml
+
+# wget -O ./calico/calico.yaml https://docs.projectcalico.org/v3.16/manifests/calico.yaml
+kubectl apply -f ./calico/calico.yaml
 
 # Wait a while to let network takes effect
 sleep 30
