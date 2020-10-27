@@ -25,6 +25,7 @@ sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/cen
 sudo yum install -y docker-ce-19.03.11 docker-ce-cli-19.03.11 containerd.io-1.2.13
 
 # Setup Docker daemon
+mkdir -p /etc/docker
 sudo cat <<EOF | sudo tee /etc/docker/daemon.json
 {
   "exec-opts": ["native.cgroupdriver=systemd"],
