@@ -88,8 +88,10 @@ spec:
         args:
           - --cert-dir=/tmp
           - --secure-port=4443
-          - --kubelet-insecure-tls
+        command:
+          - /metrics-server
           - --kubelet-preferred-address-types=InternalIP
+          - --kubelet-insecure-tls
         ports:
         - name: main-port
           containerPort: 4443
