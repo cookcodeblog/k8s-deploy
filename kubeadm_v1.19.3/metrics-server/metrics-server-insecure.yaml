@@ -88,7 +88,8 @@ spec:
         args:
           - --cert-dir=/tmp
           - --secure-port=4443
-          - --kubelet-preferred-address-types=InternalIP
+          - --kubelet-insecure-tls
+          - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
         ports:
         - name: main-port
           containerPort: 4443
@@ -102,7 +103,6 @@ spec:
           mountPath: /tmp
       nodeSelector:
         kubernetes.io/os: linux
-      hostNetwork: true
 ---
 apiVersion: v1
 kind: Service
