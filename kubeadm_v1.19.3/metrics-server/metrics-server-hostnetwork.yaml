@@ -83,11 +83,12 @@ spec:
         emptyDir: {}
       containers:
       - name: metrics-server
-        image: k8s.gcr.io/metrics-server/metrics-server:v0.3.7
+        image: registry.cn-shenzhen.aliyuncs.com/cookcodeblog/metrics-server:v0.3.7
         imagePullPolicy: IfNotPresent
         args:
           - --cert-dir=/tmp
           - --secure-port=4443
+          - --kubelet-preferred-address-types=InternalIP
         ports:
         - name: main-port
           containerPort: 4443
@@ -101,6 +102,7 @@ spec:
           mountPath: /tmp
       nodeSelector:
         kubernetes.io/os: linux
+      hostNetwork: true
 ---
 apiVersion: v1
 kind: Service
