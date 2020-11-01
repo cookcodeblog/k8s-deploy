@@ -15,5 +15,12 @@ kubectl apply -f ./calico/${MANIFEST_NAME}
 # Wait a while to let network takes effect
 sleep 30
 
-kubectl get pods -n=kube-system -l k8s-app=calico-node
+# Check daemonset
+kubectls get ds -n kube-system -l k8s-app=calico-node
+
+# Check pod status and ready
+kubectl get pods -n kube-system -l k8s-app=calico-node
+
+# Check apiservice status
+kubectl get apiservice v1.crd.projectcalico.org -o yaml
 
