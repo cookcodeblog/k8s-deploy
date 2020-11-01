@@ -16,7 +16,7 @@ kubectl apply -f ./calico/${MANIFEST_NAME}
 sleep 30
 
 # Check daemonset
-kubectls get ds -n kube-system -l k8s-app=calico-node
+kubectl get ds -n kube-system -l k8s-app=calico-node
 
 # Check pod status and ready
 kubectl get pods -n kube-system -l k8s-app=calico-node
